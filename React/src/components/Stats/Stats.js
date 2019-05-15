@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Stats.module.css';
 
 const randColor = () => {
@@ -26,4 +27,12 @@ const Stats = ({ title, stats }) => (
   </section>
 );
 
+Stats.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.shape).isRequired,
+};
+
+Stats.defaultProps = {
+  title: 'Upload stats',
+};
 export default Stats;

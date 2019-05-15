@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './PricingPlan.module.css';
 
 const PricingItems = ({ el }) => (
@@ -10,8 +11,14 @@ const PricingItems = ({ el }) => (
     <p className={styles.abz}>{el.capacity}</p>
     <p className={styles.abz}>{el.description}</p>
     <p className={styles.price}>{el.price}/MO</p>
-    <button className={styles.btn}>Get Started</button>
+    <button type="submit" className={styles.btn}>
+      Get Started
+    </button>
   </div>
 );
+
+PricingItems.propTypes = {
+  el: PropTypes.shape().isRequired,
+};
 
 export default PricingItems;

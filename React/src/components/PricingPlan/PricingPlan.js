@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PricingItem from './PricingItem';
 import styles from './PricingPlan.module.css';
 
@@ -11,5 +12,9 @@ const PricingPlans = ({ plan }) => (
     ))}
   </ul>
 );
+
+PricingPlans.propTypes = {
+  plan: PropTypes.arrayOf(PropTypes.shape).isRequired,
+};
 
 export default PricingPlans;

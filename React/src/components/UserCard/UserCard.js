@@ -29,9 +29,11 @@ const UserCard = ({ name, avatar, tag, location, stats }) => (
 );
 
 UserCard.propTypes = {
-  avatar: PropTypes.string,
-  tag: PropTypes.string,
-  name: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.shape(PropTypes.shape).isRequired,
 };
 
 export default UserCard;
