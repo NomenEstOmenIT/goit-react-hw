@@ -1,0 +1,83 @@
+.dashboard {
+  margin: 0 auto;
+  padding: 50px;
+}
+.controls {
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.controls input {
+  margin: 10px;
+  border-radius: 3px;
+  border: none;
+  line-height: 30px;
+  width: 15%;
+}
+
+.controls button {
+  background-color: rgba(110, 169, 241, 0.864);
+  color: #fff;
+  margin: 10px;
+  line-height: 30px;
+  width: 10%;
+  border-radius: 3px;
+  border: none;
+  font-weight: 700;
+}
+
+.balance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance span {
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.balance span > span {
+  color: green;
+}
+.balance span:nth-of-type(2) > span {
+  color: red;
+}
+
+.history th {
+  width: 32%;
+  border: solid 1px rgba(124, 130, 137, 0.49);
+  line-height: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+.history td {
+  width: 32%;
+  border: solid 1px rgba(124, 130, 137, 0.258);
+  border-collapse: collapse;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: rgb(124, 130, 137);
+}
+
+.history {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(128, 128, 128, 0.599);
+}
+
+.history thead {
+  background-color: rgba(124, 130, 137, 0.49);
+}
+
+.number {
+  margin: 30px;
+  color: blueviolet;
+  text-align: center;
+  font-size: 40px;
+}
