@@ -13,6 +13,10 @@
   align-items: flex-start;
 }
 
+.BookListItemImgContainer > img {
+  width: auto;
+}
+
 .BookListItemTextContainer {
   width: 60%;
 }

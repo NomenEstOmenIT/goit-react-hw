@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './GallerySearchForm.module.css';
 
-const GallerySearchForm = ({ onHandleSubmit, onHandleChange }) => (
+const GallerySearchForm = ({ onHandleChange }) => (
   <form className={styles.searchForm}>
     <input
       onChange={onHandleChange}
@@ -11,4 +12,9 @@ const GallerySearchForm = ({ onHandleSubmit, onHandleChange }) => (
     />
   </form>
 );
+
+GallerySearchForm.propTypes = {
+  onHandleChange: PropTypes.func.isRequired,
+};
+
 export default GallerySearchForm;

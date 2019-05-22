@@ -10,7 +10,6 @@ export default class Gallery extends Component {
     page: 1,
     query: '',
     items: [],
-    error: null,
     isModalOpen: false,
     clicElIndex: '',
   };
@@ -34,13 +33,11 @@ export default class Gallery extends Component {
   };
 
   updateState = () => {
-    articleGalleryAPI(this.state.query, this.state.page)
-      .then(response =>
-        this.setState({
-          items: response.data.hits,
-        }),
-      )
-      .catch(error => this.setState({ error }));
+    articleGalleryAPI(this.state.query, this.state.page).then(response =>
+      this.setState({
+        items: response.data.hits,
+      }),
+    );
   };
 
   openModal = e => {
@@ -58,18 +55,15 @@ export default class Gallery extends Component {
 
   loadMore() {
     const { query, page } = this.state;
-    articleGalleryAPI(query, page)
-      .then(response =>
-        this.setState(prevState => ({
-          items: [...prevState.items, ...response.data.hits],
-        })),
-      )
-      .catch(error => this.setState({ error }));
+    articleGalleryAPI(query, page).then(response =>
+      this.setState(prevState => ({
+        items: [...prevState.items, ...response.data.hits],
+      })),
+    );
   }
 
   render() {
     const { items, isModalOpen, clicElIndex } = this.state;
-    console.log(items);
     return (
       <div className={styles.app}>
         <GallerySearchForm onHandleChange={this.onHandleChange} />

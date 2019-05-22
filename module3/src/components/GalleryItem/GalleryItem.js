@@ -1,11 +1,18 @@
 import React from 'react';
 import './GalleryItem.css';
+import PropTypes from 'prop-types';
 
 const GalleryItem = ({ items, openModal }) => {
   return (
     <>
       {items.map((el, i) => (
-        <li key={el.id} id={i} onClick={openModal} className="gallery-item">
+        <li
+          key={el.id}
+          id={i}
+          onClick={openModal}
+          role="presentation"
+          className="gallery-item"
+        >
           <img src={el.webformatURL} alt="" />
 
           <div className="stats">
@@ -34,6 +41,11 @@ const GalleryItem = ({ items, openModal }) => {
       ))}
     </>
   );
+};
+
+GalleryItem.propTypes = {
+  items: PropTypes.shape(PropTypes.arrayOf().isRequired).isRequired,
+  openModal: PropTypes.func.isRequired,
 };
 
 export default GalleryItem;
