@@ -1,0 +1,26 @@
+.form {
+  margin: 30px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  line-height: 25px;
+  margin: 15px;
+}
+
+.form select {
+  height: 32px;
+  width: 100px;
+  margin: 15px;
+}
+
+.form button {
+  background-color: rgb(69, 135, 228);
+  color: #fff;
+  border: none;
+  width: 100px;
+  line-height: 30px;
+}

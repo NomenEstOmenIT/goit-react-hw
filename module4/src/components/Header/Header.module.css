@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 2rem;
+  background-color: #2f3640;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-right: 1.5rem;
+  transition: all .5s linear;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #eb3b5a;
+}
+
+.nav a:last-of-type {
+  margin-right: 0;
+}

@@ -1,0 +1,39 @@
+.petsContainer {
+  padding-top: 2rem;
+  height: calc(100vh - 92px);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.petTitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.petsCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.petCard {
+  flex-basis: 24%;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  transition: all 0.5s linear;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.petCard:hover {
+  transform: scale(1.1);
+}
+
+.petCard:nth-last-of-type(-n + 3) {
+  margin-bottom: 0;
+}
+
+.petCard h2 {
+  text-align: center;
+  color: #000;
+  margin: 1rem 0;
+}

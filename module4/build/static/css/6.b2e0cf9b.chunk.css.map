@@ -1,0 +1,1 @@
+{"version":3,"sources":["Home.module.css"],"names":[],"mappings":"AAAA,mBACE,cAAe,CACf,yBAA0B,CAC1B,YAAa,CACb,sBAAuB,CACvB,kBACF","file":"6.b2e0cf9b.chunk.css","sourcesContent":[".title {\n  font-size: 2rem;\n  height: calc(100vh - 92px);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n"]}

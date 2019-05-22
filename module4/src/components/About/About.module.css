@@ -1,0 +1,21 @@
+.aboutContainer {
+  padding-top: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aboutContainer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.aboutContainer p {
+  font-size: 1.2rem;
+  width: 50%;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.aboutContainer p:last-of-type {
+  margin-bottom: 0;
+}

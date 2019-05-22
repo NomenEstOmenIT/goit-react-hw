@@ -1,0 +1,12 @@
+.reader {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+.taskTitle {
+  font-size: 2rem;
+  text-align: center;
+  color: #3498db;
+}

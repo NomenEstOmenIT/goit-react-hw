@@ -1,0 +1,23 @@
+.box {
+  width: 45%;
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.578);
+  margin: 20px;
+}
+
+.BookListItemImgContainer {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.BookListItemTextContainer {
+  width: 60%;
+}
+
+.BookListItemTextContainer span {
+  display: block;
+  margin-bottom: 10px;
+}
